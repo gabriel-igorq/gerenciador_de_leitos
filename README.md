@@ -1,6 +1,8 @@
 # Gerenciador de Leitos
 Desenvolvimento de sistema para gerenciamento de leitos com base em projeto desenvolvido para a disciplina IMD0401 - Banco de Dados
 
+- Observação: O script para popular tabela foi criado a partir de dados fictícios, com o propósito de apenas demonstrar o funcionamento do sistema.
+
 ## 1. Visão do Sistema
 Tradicionalmente, a motivação para o uso de Tecnologias da Informação e Comunicação (TIC) no sistema de saúde é oferecer soluções promissoras para a entrega eficiente de todos os tipos de serviços médicos de saúde aos pacientes, como sistemas de registros eletrônicos, sistemas de telemedicina, dispositivos personalizados para diagnóstico e outros, que são denominados e-health. 
 O surto de corona vírus está estressando o sistema de saúde de muitos países do mundo, revelando a necessidade de desenvolver e aumentar a capacidade de aumento para cuidados intensivos. Entretanto, medir, monitorar e contabilizar a disponibilidade de leitos em unidade de terapia intensiva (UTI) em uma cidade, estado ou país, em tempo real, é uma tarefa árdua para muitos governos. Pensando nisso, pensamos em um sistema de controle de leitos, onde o governo pode controlar quantas vagas estão disponíveis no combate ao covid; quantas pessoas estão infectadas; quantas foram curadas e quantos leitos estão ocupados.
@@ -61,3 +63,5 @@ Finalizando o mapeamento há o relacionamento entre Paciente e Internação. Um 
 ## 5. Normalização
 O modelo relacional proposto na seção anterior foi analisado para verificação das regras formais. De imediato constata-se que todas as tabelas estão na 1ª Forma Normal(1FN) pois  nenhuma das relações possui tabelas aninhadas. Como as tabelas possuem apenas uma chave primária e não possuem dependência funcional entre elas, constatou-se que elas também estão na 2FN e 3FN.
 
+## 6. Consultas
+Uma série de consultas foram realizadas para o projeto, seguindo os critérios estabelecidos pela disciplina(criar consultas aninhadas usando exists, usando in, usando all...). As consultas estão todas presentes no arquivo *main.py*
